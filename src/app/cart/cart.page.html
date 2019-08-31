@@ -1,0 +1,131 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light">Cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding-top color="light">
+  <div>
+    <ion-row margin-horizontal margin-bottom>
+      <ion-text><strong class="text">Items in Cart</strong></ion-text>
+    </ion-row>
+
+    <ion-item lines="none">
+      <ion-row>
+        <ion-col size="3" text-center>
+          <img src="assets/7.jpg" alt="image">
+          <ion-text color="danger" class="small">Remove</ion-text>
+        </ion-col>
+        <ion-col size="6">
+          <h3 no-margin class="item-name">Morrisson Dress</h3>
+          <h5 no-margin class="item-def">M, Black</h5>
+          <h5 no-margin class="item-def">Shipping: $0</h5>
+          <h5 no-margin class="item-def">Dec 31 - Jan 17</h5>
+        </ion-col>
+        <ion-col size="3" float-right>
+          <ion-row text-end justify-content-end>
+            <h3 no-margin class="item-name" text-end>
+              $33.33</h3>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-row size="12" justify-content-center disabled="true">
+      <ion-button fill="outline" color="primary">Continue shopping</ion-button>
+    </ion-row>
+    <ion-row margin>
+      <ion-text><strong class="text">Order Summary</strong></ion-text>
+    </ion-row>
+    <ion-item lines="none" class="card" no-margin>
+      <ion-row class="full">
+        <ion-col size="9">
+          <ion-input placeholder="Enter Promo Code" class="input"></ion-input>
+        </ion-col>
+        <ion-col align-self-center size="3">
+          <ion-button fill="outline" expand="block" color="mytheme"><span class="small">Apply</span></ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <div lines="none" class="card" no-margin padding-bottom>
+      <ion-row class="full" padding-horizontal>
+        <ion-col size="9">
+          <ion-text>Item Total</ion-text>
+        </ion-col>
+        <ion-col size="3" text-end>
+          <ion-text>$3.33</ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row class="full" padding-horizontal>
+        <ion-col size="9">
+          <ion-text>Shipping</ion-text>
+        </ion-col>
+        <ion-col size="3" text-end>
+          <ion-text>$0</ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row class="full" padding-horizontal>
+        <ion-col size="9">
+          <ion-text>Item Total</ion-text>
+        </ion-col>
+        <ion-col size="3" text-end>
+          <ion-text>$33.33</ion-text>
+        </ion-col>
+      </ion-row>
+      <div class="sep"></div>
+      <ion-row>
+        <ion-col>
+          <ion-text class="item-def" text-start>
+            <div class="pad">
+              By tapping 'Checkout' you aggree to the <a class="mycolor">Terms of Use</a>
+              and <a class="mycolor">Privacy Policy</a>
+            </div>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <div class="sep"></div>
+      <ion-row>
+        <ion-col>
+          <ion-text class="item-def" text-start padding-bottom>
+            <div class="mycolor pad">
+              30 Day Free Return and Refund
+            </div>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+  <ion-list lines="none" class="listSection">
+    <ion-list-header>
+      <ion-label>Resources</ion-label>
+    </ion-list-header>
+    <ion-item href="https://enappd.com/blog/ionic-4-stripe-payment-integration-with-firebase-for-apps-and-pwa/17/">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>Ionic 4 -Paypal Integration</ion-label>
+    </ion-item>
+    <ion-item href="https://enappd.com/blog/ionic-4-paypal-payment-integration-for-apps-and-pwa/16/">
+      <ion-icon slot="start" color="medium" name="build"></ion-icon>
+      <ion-label>Ionic 4 -Stripe Integration</ion-label>
+    </ion-item>
+    <ion-item href="https://enappd.com/blog/how-to-integrate-apple-pay-in-ionic-4-apps/21/">
+      <ion-icon slot="start" color="medium" name="grid"></ion-icon>
+      <ion-label>Ionic 4 - ApplePay Integration</ion-label>
+    </ion-item>
+    <ion-item href="https://enappd.com/blog/how-to-integrate-razorpay-in-ionic-4-apps-and-pwa/20/">
+      <ion-icon slot="start" color="medium" name="grid"></ion-icon>
+      <ion-label>Ionic 4 - Razorpay Integration</ion-label>
+    </ion-item>
+    <ion-item href="https://store.enappd.com">
+      <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
+      <ion-label>More Enappd Starters</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer (click)="checkout()">
+  <ion-toolbar color="success">
+    <ion-title>Checkout</ion-title>
+  </ion-toolbar>
+</ion-footer>
